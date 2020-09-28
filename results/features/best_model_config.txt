@@ -1,0 +1,30 @@
+
+-------------------- Options ---------------------
+ batch_size               : 4
+ best_model               : 0.5737522264220276
+ checkpoint_interval      : 10
+ compensated_target       : False
+ cross_validation         : False
+ datadir                  : data/
+ dataloader_workers       : 0
+ datapath                 : /media/justin/Storage/CameraData/num_1/blackfly/downsized/exp+gain-downsized/moving-downsized
+ device                   : cuda:0
+ epsilon                  : 0.5
+ experiment_name          : features/
+ hyperparameter           : False
+ image_normalization      : False
+ jobs                     : 1
+ loss_formulation         : absolute
+ loss_type                : l1
+ lr                       : 0.0001
+ max_exposure             : 30000
+ max_gain                 : 30
+ method                   : features
+ min_exposure             : 75
+ param_norm               : False
+ parameter                : exp+gain
+ results_dir              : results/
+ sequence                 : multi_image
+ train_epochs             : 1
+ validation_sets          : [1]
+--------------------------------------------------
