@@ -25,7 +25,8 @@ The training data must be organized in the following manner for e.g., data_01:\
 `ipython generate_feature_targets.py PATH_TO_DATASET`,\
 `ipython generate_gridsearch_targets.py PATH_TO_DATASET` and\
 `python generate_hybrid_targets.py`\
-to generate each type of target. Note that hybrid targets can only be generated after the feature and gridsearch targets have been generated.
+to generate each type of target. Note that hybrid targets can only be generated after the feature and gridsearch targets have been generated.\
+NOTE: Examples of training targets for each target generation method can be found in `data/TARGET_METHOD`.
 
 ## Training the Network
 1. Generate training targets.
@@ -35,7 +36,8 @@ to generate each type of target. Note that hybrid targets can only be generated 
  TARGET_METHOD - type of training target generation method used (features, gridsearch, hybrid)\
  DATASET_PATH - path to the acquired dataset
 4. In another terminal run `tensorboard --port [port] --logdir [path]` to start the visualization server, where `[port]` should be replaced by a numeric value (e.g., 60006) and `[path]` should be replaced by your local results directory.
-5. Tune in to `localhost:[port]` and watch the action.
+5. Tune in to `localhost:[port]` and watch the action.\
+NOTE: Examples of the training data can be found in `data/training_data/`. An example of training outputs can be found in `results/`. 
 
 ## Using the Network to Acquire Images
 1. Copy the trained network `.pth.tar` file from `results/TARGET_METHOD/checkpoints` to the main directory.
